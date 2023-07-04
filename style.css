@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap");
+
+/*  
+---variáveis---
+:root {
+  --style-primario: background-image: url(./assets/fundo1.png);
+  --cor-secundaria:  #22D4FD;
+  --cor-terciaria: white;
+}
+*/
+
+* {
+  margin: 0; /*tira a margem padrão do navegador*/
+  padding: 0; /*tira o padding padrão do navegador*/
+}
+
+body {
+ /* height: 100vh; /*altura total da tela*/
+  box-sizing: border-box; /*evita que o conteúdo ultrapasse a tela*/
+  background-image: url(./assets/fundo1.png);
+  color: #f6f6f6;
+}
+.titulo-destaque {
+  color: #22D4FD;
+}
+
+.cabecalho{
+  padding: 2% 0 0 16%;
+}
+
+.cabecalho_menu{
+  display: flex;
+  gap: 80px;
+}
+
+
+
+.cabecalho_link{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #22D4FD;
+  text-decoration: none;
+  list-style-type: disc;
+  display: inline;
+}
+
+.cabecalho_link:hover{
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+
+
+.apresentacao {
+  margin: 10% 20%;
+  display: flex; /*faz com que os elementos fiquem um ao lado do outro*/
+  align-items: center; /*alinha os elementos ao centro*/
+  align-content: center; /*alinha os elementos ao centro*/
+  justify-content: space-between; /*espaço entre os elementos*/
+}
+
+.apresentacao__conteudo {
+  width: 590px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+  font-size: 36px;
+  font-family: "Krona One", sans-serif;
+}
+
+.nome-destaque {
+  color:#f6f6f6;
+}
+
+.apresentacao_conteudo_p1 {
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.apresentaocao_links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px; /*espaço entre os elementos*/
+}
+
+.apresentacao_links_sub {
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-size:20px;
+}
+
+.button {
+  display: flex; /*faz com que o botão fique na mesma linha*/
+  justify-content: center; /*alinha o botão ao centro*/
+  gap: 16px; /*espaço entre os elementos*/
+  padding: 15px 25px; /*tamanho do botão*/
+   /*background-color: rgb(44, 130, 201); /*cor de fundo do botão*/
+  color: white; /*cor do texto do botão*/
+  text-align: center; /*alinha o texto ao centro*/
+  border-radius: 20px; /*arredonda as bordas do botão*/
+  font-size: 20px; /*tamanho da fonte do texto*/
+  text-decoration: none; /*tira o sublinhado do link*/
+  border: none; /*tira a borda do botão*/
+  border-radius: 30px; /*arredonda as bordas do botão*/
+  padding: 30px; /*tamanho do botão*/
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600px;
+  width: 378px;
+  border: 2px solid #22D4FD;
+}
+
+/*botão*/
+.button:hover {
+  background-color: #272727;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+
+.minha_classe {
+  width: 99px;
+  height: 530px;
+  margin: 65px; /*espaço entre os elementos*/
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: url(<path-to-image>),
+    rgb(212, 23, 187) -39.262px -50.143px / 212.432% 124.461% no-repeat;
+  border: 1px solid rgb(red, green, blue);
+  border-radius: 16px;
+  border: 3px solid #22d4fd;
+  flex-direction: column;
+}
+
+.rodape{
+  color: #000000;
+  background-color: #22D4FD;
+  padding: 40px;
+  text-align: center;
+  font-family: "Krona One", sans-serif;
+  font-size: 20px;
+}
