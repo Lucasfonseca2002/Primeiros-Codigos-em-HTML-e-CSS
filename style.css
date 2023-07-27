@@ -27,7 +27,7 @@ body {
 }
 
 .cabecalho{
-  padding: 2% 0 0 16%;
+  padding: 2% 0 0 20%;
 }
 
 .cabecalho_menu{
@@ -39,12 +39,13 @@ body {
 
 .cabecalho_link{
   font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #22D4FD;
   text-decoration: none;
   list-style-type: disc;
   display: inline;
+
 }
 
 .cabecalho_link:hover{
@@ -60,17 +61,18 @@ body {
   align-items: center; /*alinha os elementos ao centro*/
   align-content: center; /*alinha os elementos ao centro*/
   justify-content: space-between; /*espaço entre os elementos*/
+  gap: 82px; /*espaço entre os elementos*/
 }
 
 .apresentacao__conteudo {
-  width: 590px;
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
 .apresentacao__conteudo__titulo {
-  font-size: 36px;
+  font-size: 1.9rem;
   font-family: "Krona One", sans-serif;
 }
 
@@ -79,7 +81,7 @@ body {
 }
 
 .apresentacao_conteudo_p1 {
-  font-size: 25px;
+  font-size: 1.3rem;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -94,7 +96,7 @@ body {
 .apresentacao_links_sub {
   font-family: "Krona One", sans-serif;
   font-weight: 400;
-  font-size:20px;
+  font-size:1.5rem;
 }
 
 .button {
@@ -106,14 +108,14 @@ body {
   color: white; /*cor do texto do botão*/
   text-align: center; /*alinha o texto ao centro*/
   border-radius: 20px; /*arredonda as bordas do botão*/
-  font-size: 20px; /*tamanho da fonte do texto*/
+  font-size: 1.5rem; /*tamanho da fonte do texto*/
   text-decoration: none; /*tira o sublinhado do link*/
   border: none; /*tira a borda do botão*/
   border-radius: 30px; /*arredonda as bordas do botão*/
   padding: 30px; /*tamanho do botão*/
   font-family: "Montserrat", sans-serif;
   font-weight: 600px;
-  width: 378px;
+  width: 50%;
   border: 2px solid #22D4FD;
 }
 
@@ -126,17 +128,15 @@ body {
 
 
 .minha_classe {
-  width: 99px;
-  height: 530px;
-  margin: 65px; /*espaço entre os elementos*/
-  flex-shrink: 0;
-  border-radius: 15px;
+  width: 400px; /*largura do elemento*/
+  height: 50%; /*altura do elemento*/
+  margin: 60px; /*espaço entre os elementos*/
+  flex-shrink: 0; /*não deixa o elemento diminuir*/
+  border-radius: 20px; /*arredonda as bordas do elemento*/
   background: url(<path-to-image>),
-    rgb(212, 23, 187) -39.262px -50.143px / 212.432% 124.461% no-repeat;
-  border: 1px solid rgb(red, green, blue);
-  border-radius: 16px;
-  border: 3px solid #22d4fd;
-  flex-direction: column;
+    rgb(212, 23, 187) -39.262px -50.143px / 212.432% 124.461% no-repeat; /*imagem de fundo*/
+  border: 3px solid #22d4fd; 
+  flex-direction: column; /*alinha os elementos ao centro*/
 }
 
 .rodape{
@@ -145,5 +145,24 @@ body {
   padding: 40px;
   text-align: center;
   font-family: "Krona One", sans-serif;
-  font-size: 20px;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 1200px) {
+
+  .cabecalho{
+    padding:10%;
+  }
+
+  .cabecalho_menu{
+    justify-content: center; ;
+  }
+  .apresentacao {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+  .apresentacao__conteudo{
+    width: auto;
+
+  }
 }
